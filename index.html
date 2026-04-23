@@ -33,72 +33,119 @@
 
 </head>
 <body>
-    <div class="container">
-        <div class="nav-bar">
-            <a href="index.html" class="nav-btn">Classmate list</a>
-            <a href="attendance.html" class="nav-btn">Attendance Checker</a>
-            <a href="highlights.html" class="nav-btn">Year Highlights</a>
-        </div>
+
+    <br><br>
+
+    <div class="center sm15" style="margin-bottom: -90px;">
+        <img src="https://i.ibb.co/1YMLdZRw/image.png" width="80%">
     </div>
-    
-    <br><br><br>
 
-    <div class="narrow">
-
-        <div class="center shortstackfont">
-            <h3>Grade 10 Classmates system</h3>
-
-            <hr>
+    <div class="bgcolor1 border1 roundcorners60 padding30 sm15">
         
-        </div>
+        <div class="bgcolor2 roundcorners30 padding30">
 
-        <div>
-            
-            <form class="justify">  
-                <div class="row">
-                    <!-- name -->
-                    <div class="col-sm-2">
-                        <p>name:</p>
-                    </div>
+            <div class="bgcolor3 roundcorners20 padding30">
 
-                    <div class="col-sm-10">
-                        <input type="text" id="input1">
-                    </div>
+                <!-- NAVBAR -->
 
-                    <!-- section -->
-                    <div class="col-sm-2">
-                        <p>section:</p>
-                    </div>
-
-                    <div class="col-sm-10">
-                        <input type="text" id="input2">
-                    </div>
-
-                    <!-- fav sub -->
-                    <div class="col-sm-2">
-                        <p>fav sub:</p>
-                    </div>
-
-                    <div class="col-sm-10">
-                        <input type="text" id="input3">
+                <div>
+                    <div class="nav-bar shortstackfont">
+                        <a href="index.html" class="nav-btn bgcolor2 borderless roundcorners60 color2">Classmate list</a>
+                        <a href="attendance.html" class="nav-btn bgcolor4 borderless roundcorners60 color2">Attendance Tracker</a>
+                        <a href="highlights.html" class="nav-btn bgcolor4 borderless roundcorners60 color2">Year Highlights</a>
                     </div>
                 </div>
-                <input type="button" py-click="Listclassmates" value="show list">
-                <input type="button" py-click="ClassmateInfo" value="Add your data">
-            </form>
 
-            <br>
+                <!-- CONTENT -->
 
-            <div class="center">
-                <p id="notification1"></p>
+                <div class="row">
+
+                    <div class="col-sm-5">
+
+                        <img src="https://i.ibb.co/CsDNjQqd/image.png" alt="Classmates System" width="100%">
+
+                    </div>
+
+                    <div class="col-sm-7">
+                        <div>
+                            <div>
+
+                                <div class="center">
+                                    <img src="https://i.ibb.co/QyDD7yJ/image.png" alt="2526 OBMC grade 10 | students name, section, and favorite subject." width="90%">
+                                </div> <br>
+                                
+                                <form class="justify montserratfont">
+                                    <div class="row">
+                                        <div class="col-sm-9">
+
+                                            <br>
+
+                                            <div class="row">
+                                                <!-- name -->
+                                                <div class="col-sm-3">
+                                                    <p>name:</p>
+                                                </div>
+
+                                                <div class="col-sm-9">
+                                                    <input type="text" id="input1" class="borderless bgcolor2 color2 montserratfont">
+                                                </div>
+
+                                                <!-- section -->
+                                                <div class="col-sm-3">
+                                                    <p>section:</p>
+                                                </div>
+
+                                                <div class="col-sm-9">
+                                                    <input type="text" id="input2" class="borderless bgcolor2 color2 montserratfont">
+                                                </div>
+
+                                                <!-- fav sub -->
+                                                <div class="col-sm-3">
+                                                    <p>fav sub:</p>
+                                                </div>
+
+                                                <div class="col-sm-9">
+                                                    <input type="text" id="input3" class="borderless bgcolor2 color2 montserratfont">
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-sm-3">
+
+                                            <div style="background-image: url(https://i.ibb.co/YByLfPYD/image.png); background-size: cover; width: 70px !important; height: 70px !important; margin-bottom: 10px !important;">
+                                                <input type="button"py-click="Listclassmates" style="height: 100%; background-color: #00000000; border: none;">
+                                            </div>
+
+                                            <div style="background-image: url(https://i.ibb.co/twyDwV94/image.png); background-size: cover; width: 70px !important; height: 70px !important;">
+                                                <input type="button" py-click="ClassmateInfo" style="height: 100%; background-color: #00000000; border: none;">
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    
+                                </form>
+
+                                <br>
+
+                                <div class="center">
+                                    <p id="notification1"></p>
+                                </div>
+                                
+                                <p id="output1"></p>
+                                
+                            </div>
+
+                            <br>
+                            
+                        </div>
+                    </div>
+                </div>
+
             </div>
-            
-            <p id="output1"></p>
-            
+
         </div>
 
-        <br>
-        
     </div>
     
     <py-script src="main.py"></py-script>
