@@ -1,5 +1,93 @@
 html body {
-    background-color: #fbfbf8;
+    background-image: url(https://i.ibb.co/n8RKcnm3/image.png);
+    background-attachment: fixed; /* This keeps the image still */
+    background-repeat: no-repeat;
+    background-size: cover;       /* Optional: ensures image fills the screen */
+    background-position: center
+}
+
+/* --- widths --- */
+
+.sm15 {
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 70%;
+}
+
+
+/* --- background color --- */
+
+.bgcolor1 {
+    background-color: #B09162;
+}
+
+.bgcolor2 {
+    background-color: #977B51;
+}
+
+.bgcolor3 {
+    background-color: #F9F7E3;
+}
+
+.bgcolor4 {
+    background-color: #87878C;
+}
+
+/* --- text colors --- */
+
+.color1 {
+    color: #80604B !important;
+}
+
+.color2 {
+    color: #F9F7E3 !important;
+}
+
+/* --- border ---- */
+
+.border1 {
+    border: solid;
+    border-width: 2px;
+    border-color: #634835;
+}
+
+.borderless {
+    border: none !important;
+}
+
+/* --- round corner --- */
+
+.roundcorners60 {
+    border-radius: 60px;
+}
+
+.roundcorners30 {
+    border-radius: 30px;
+}
+
+.roundcorners20 {
+    border-radius: 20px;
+}
+
+/* --- padding --- */
+
+.padding30 {
+    padding: 30px !important;
+}
+
+.padding60 {
+    padding: 60px;
+}
+
+
+/* --- text align ---- */
+
+.center {
+    text-align: center;
+}
+
+.justify {
+    text-align: justify;
 }
 
 .narrow {
@@ -10,9 +98,6 @@ html body {
     flex-wrap: wrap;
 }
 
-.center {
-    text-align: center;
-}
 
 /* Navbar styling */
 
@@ -22,6 +107,18 @@ html body {
     gap: 15px;
     margin-bottom: 30px;
     flex-wrap: wrap;
+}
+
+.nav-btn {
+    text-decoration: none;
+    padding: 12px 25px;
+    border: 1px solid #333333;
+    transition: all 0.2s;
+    text-transform: uppercase;
+}
+
+.nav-btn:hover {
+    background-color: #977B51 !important;
 }
 
 .cen {
@@ -43,29 +140,6 @@ html body {
 
 				}
 
-
-.nav-btn {
-    background-color: #000000;
-    color: #ffffff;
-    text-decoration: none;
-    padding: 12px 25px;
-    border: 1px solid #333333;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 16px;
-    letter-spacing: 1px;
-    transition: all 0.2s;
-    text-transform: uppercase;
-}
-
-.nav-btn:hover {
-    background-color: #952727 !important;
-    border-color: #666666;
-}
-
-
-.justify {
-    text-align: justify;
-}
 
 .deliusfont {
     font-family: "Delius";
