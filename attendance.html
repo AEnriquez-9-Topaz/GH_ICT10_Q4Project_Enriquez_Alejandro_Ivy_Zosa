@@ -36,23 +36,23 @@
 
     <br><br>
 
-    <div class="center sm15" style="margin-bottom: -90px;">
-        <img src="https://i.ibb.co/1YMLdZRw/image.png" width="80%">
+    <div class="center sm15" style="margin-bottom: -50px;">
+        <img src="Pictures/headerdeco.png" width="80%">
     </div>
 
     <div class="bgcolor1 border1 roundcorners60 padding30 sm15">
         
         <div class="bgcolor2 roundcorners30 padding30">
 
-            <div class="bgcolor3 roundcorners20 padding30">
+            <div class="bgcolor3 roundcorners20 padding30 border3">
                 
                 <!-- NAVBAR -->
 
                 <div>
                     <div class="nav-bar shortstackfont">
-                        <a href="index.html" class="nav-btn bgcolor4 borderless roundcorners60 color2">Classmate list</a>
-                        <a href="attendance.html" class="nav-btn bgcolor2 borderless roundcorners60 color2">Attendance Tracker</a>
-                        <a href="highlights.html" class="nav-btn bgcolor4 borderless roundcorners60 color2">Year Highlights</a>
+                        <a href="index.html" class="nav-btn bgcolor4 border2 roundcorners60 color2">Classmate list</a>
+                        <a href="attendance.html" class="nav-btn bgcolor2 border2 roundcorners60 color2">Attendance Tracker</a>
+                        <a href="highlights.html" class="nav-btn bgcolor4 border2 roundcorners60 color2">Year Highlights</a>
                     </div>
                 </div>
 
@@ -62,51 +62,80 @@
 
                     <div class="col-sm-5">
 
-                        <img src="https://i.ibb.co/DDNsRG14/image.png" alt="Classmates System" width="100%">
+                        <img src="Pictures/ATTENDANCETRACKER.png" alt="Attendance Tracker" width="100%">
 
                     </div>
 
                     <div class="col-sm-7">
 
                         <div class="center">
-                            <img src="https://i.ibb.co/vxX9wj28/image.png" alt="2526 OBMC grade 10 | students name, section, and favorite subject." width="90%">
+                            <img src="Pictures/atdesc.png" alt="2526 OBMC grade 10 | students name, section, and favorite subject." width="90%">
                         </div> <br>
 
                         <!-- Card -->
                         <div class="container-fluid">
                             <div class="row justify-content-center">
-                                <div class="card_bg col-sm-9"> 
-                                    <form>
+                                <div class="center"> 
+                                    <form class="center">
                                         <card class="cen">
-                                            <label for="month">Choose a month:</label>
-                                                <select name="month" id="month" class="form-select">
-                                                <option value="1">January</option>
-                                                <option value="2">February</option>
-                                                <option value="3">March</option>
-                                                <option value="4">April</option>
-                                                <option value="5">May</option>
-                                                <option value="6">August</option>
-                                                <option value="7">September</option>
-                                                <option value="8">October</option>
-                                                <option value="9">November</option>
-                                                <option value="10">December</option>
-                                            </select>
+                                            <div class="row">
+
+                                                <div class="col-sm-7">
+
+                                                    <label for="month">Choose a month:</label>
+                                                    <select name="month" id="month" class="form-select">
+                                                        <option value="1">January</option>
+                                                        <option value="2">February</option>
+                                                        <option value="3">March</option>
+                                                        <option value="4">April</option>
+                                                        <option value="5">May</option>
+                                                        <option value="6">August</option>
+                                                        <option value="7">September</option>
+                                                        <option value="8">October</option>
+                                                        <option value="9">November</option>
+                                                        <option value="10">December</option>
+                                                    </select>
+
+                                                </div>
+
+                                                <div class="col-sm-5">
+                                                    <label for="numofabsent">No. of absences</label>
+                                                    <input type="text" class="form-control" id="absences" placeholder="#" name="numofabsent">
+                                                </div>
+                                                
+                                            </div>
+                                            
                                             <br>
-                                            <input type="text" class="form-control" id="absences" placeholder="Enter number of absences">
-                                            <br>
-                                            <input type ="button" py-click="Graph" value="show" class="bgcolor4 borderless color2 shortstackfont">
-                                            <h1> OUTPUT:</h1>    
-                                            <br>
-                                            <h4 id="output" class="margin white"></h4>
-                                            <br>
+                                            <div class="center">
+
+                                                <div style="background-image: url(Pictures/atshowgraphbtn.png); background-size: cover; width: 100% !important;">
+                                                    <input type="button" py-click="Graph" style="height: 100%; background-color: #00000000; border: none; padding-bottom: 20px;">
+                                                </div>
+
+                                            </div>
                                     </card>
                                     </form>
                                 </div>
                             </div>
-                        </div>
 
+                        </div>
                     </div>
 
+                        <div class="right">
+                            <img src="Pictures/xdec.png" alt="x" width="90px" style="margin-bottom: -50px; margin-right: 20px;">
+                        </div>
+
+                        <div class="center">
+                            <br>
+                            <div class="bgcolor5 roundcorners20 padding30 border2">
+                                <div class="roundcorners20 padding30 border3" style="background-color: white;">
+                                    <h4 id="output" class="margin white"></h4>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    <br>
+                    
                 </div>
 
             </div>
@@ -115,9 +144,11 @@
     
     </div>
 
+    <br><br>
+
     <!--Footer div-->
     <div id="footer"> 
-        <p class="cen ital pad"> Alejandro Enriquez, Ivy Zosa | 10-Topaz </p>
+        <p class="cen ital pad"> <a href="https://github.com/AEnriquez-9-Topaz">Alejandro Enriquez</a>, <a href="https://github.com/IZosa-9T">Ivy Zosa</a> | 10-Topaz </p>
     </div>
     <py-script src="main.py"></py-script> 
 </body>
