@@ -1,8 +1,8 @@
 html body {
     background-image: url(https://i.ibb.co/n8RKcnm3/image.png);
-    background-attachment: fixed; /* This keeps the image still */
+    background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: cover;       /* Optional: ensures image fills the screen */
+    background-size: cover;
     background-position: center
 }
 
@@ -14,6 +14,13 @@ html body {
     width: 70%;
 }
 
+.narrow {
+    max-width: 1500px;
+    margin: 0 auto !important;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
 
 /* --- background color --- */
 
@@ -33,6 +40,10 @@ html body {
     background-color: #87878C;
 }
 
+.bgcolor5 {
+    background-color: #D0B078;
+}
+
 /* --- text colors --- */
 
 .color1 {
@@ -47,8 +58,20 @@ html body {
 
 .border1 {
     border: solid;
-    border-width: 2px;
+    border-width: 4px;
     border-color: #634835;
+}
+
+.border2 {
+    border: dashed;
+    border-width: 4px;
+    border-color: #674834;
+}
+
+.border3 {
+    border: solid;
+    border-width: 4px;
+    border-color: #674834df;
 }
 
 .borderless {
@@ -72,32 +95,44 @@ html body {
 /* --- padding --- */
 
 .padding30 {
-    padding: 30px !important;
+    padding: 20px !important;
 }
 
 .padding60 {
-    padding: 60px;
+    padding: 50px;
 }
 
 
-/* --- text align ---- */
+/* --- text style ---- */
 
 .center {
     text-align: center;
+}
+
+.cen {
+	text-align: center;
+
 }
 
 .justify {
     text-align: justify;
 }
 
-.narrow {
-    max-width: 1500px;
-    margin: 0 auto !important;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+.right {
+    text-align: right;
 }
 
+.deliusfont {
+    font-family: "Delius";
+}
+
+.montserratfont {
+    font-family: "Montserrat";
+}
+
+.shortstackfont {
+    font-family: "Short Stack";
+}
 
 /* Navbar styling */
 
@@ -112,7 +147,6 @@ html body {
 .nav-btn {
     text-decoration: none;
     padding: 12px 25px;
-    border: 1px solid #333333;
     transition: all 0.2s;
     text-transform: uppercase;
 }
@@ -121,11 +155,26 @@ html body {
     background-color: #977B51 !important;
 }
 
-.cen {
-	text-align: center;
+/* --- card styling --- */
 
+.card {
+    background-color: #E7D4A5 !important;
+    border: solid !important;
+    border-width: 3px !important;
+    border-color: #67483462 !important;
+    margin-bottom: 20px;
 }
 
+.card-title {
+    font-family: "Short Stack";
+    color: #80604B !important;
+    font-weight: 600;
+}
+
+.card-text {
+    font-family: "Montserrat";
+    color: #80604B !important;
+}
 
 
 .picture {
@@ -137,20 +186,10 @@ html body {
 		display: inline-flex;
 		margin-right: 2%;
 		margin-left: 2%;
-
-				}
-
-
-.deliusfont {
-    font-family: "Delius";
-}
-
-.montserratfont {
-    font-family: "Montserrat";
 }
 
 #footer {
-    background-color: rgb(155, 155, 155);
+    background-color: #80604B;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -161,14 +200,24 @@ html body {
     align-items: center !important;
     justify-content: center !important;
     color:  #1d1c1c;
+    font-family: "Short Stack";
+    color: #F9F7E3 !important;
+    padding-top: 15px;
+    border-top: solid;
+    border-top-width: 4px;
+    border-color: #63483584;
 }
 
-.shortstackfont {
-    font-family: "Short Stack";
+#footer, a {
+    color: #F9F7E3 !important;
+    text-decoration: none !important;
 }
+
+
 
 input {
     border-radius: 20px !important;
     margin-bottom: 5px !important;
     width: 100%;
 }
+
