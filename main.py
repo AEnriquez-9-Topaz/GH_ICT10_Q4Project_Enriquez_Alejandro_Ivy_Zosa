@@ -1,6 +1,8 @@
 from pyscript import display, document
 import numpy as np # np is just a common alias
-import matplotlib.pyplot as plt # plt is a common alias
+import logging
+logging.getLogger('matplotlib').setLevel(logging.ERROR)
+import matplotlib.pyplot as plt
 
 #Classmate list
 class Classmate:
